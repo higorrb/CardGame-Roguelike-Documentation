@@ -1,10 +1,6 @@
 # CardGame-Roguelike-Documentation
 
-RPG Card Game Prototype (Work in Progress)
-
-This project is a technical study developed using the Godot Engine and GDScript. The primary goal is to build a functional turn-based combat system inspired by deckbuilders, focusing on modular architecture and robust system logic.
-
-RPG Card Game Prototype (Work in Progress)
+Card Game Prototype (Work in Progress)
 
 This project is a technical study developed using the Godot Engine and GDScript. The primary goal is to build a functional turn-based combat system inspired by deckbuilders, focusing on modular architecture and robust system logic.
 

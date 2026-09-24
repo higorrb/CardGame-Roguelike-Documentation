@@ -1,50 +1,44 @@
-# CardGame-Roguelike-Documentation
+#Documentação do CardGame-Roguelike
 
-Card Game Prototype (Work in Progress)
+Protótipo de Jogo de Cartas (Em Desenvolvimento)
 
-This project is a technical study developed using the Godot Engine and GDScript. The primary goal is to build a functional turn-based combat system inspired by deckbuilders, focusing on modular architecture and robust system logic.
+Este projeto é um estudo técnico desenvolvido na Godot Engine utilizando GDScript. O objetivo principal é construir um sistema funcional de combate em turnos inspirado em jogos de deckbuilding, com foco em uma arquitetura modular e lógica de sistemas robusta.
 
-Technical Features
+Funcionalidades Técnicas
+Sistema de Combate em Turnos: Gerenciamento de estados que controla as transições entre o turno do jogador e o turno da IA do inimigo.
 
-    Turn-Based Combat System: State management controlling transitions between the Player's turn and the Enemy AI's turn.
+Gerenciamento de Mão e Baralho: Sistema responsável pelos dados das cartas, incluindo a compra do baralho, limite do tamanho da mão e descarte de cartas jogadas. Conta com uma interface interativa de arrastar e soltar (drag and drop) para ativação.
 
-    Card & Hand Management: System responsible for handling card data, including drawing from the deck, managing the player's hand size, and moving used cards to the discard pile. It includes an interactive "drag and drop" interface for card activation.
+    Mecânicas Baseadas em Dados: Implementação de rolagens de dados aleatórias (D4, D6, D20) com suporte a modificadores dinâmicos de dano e cura.
 
-    Dice-Based Mechanics: Implementation of randomized dice rolls (D4, D6, D20) with support for dynamic damage and healing modifiers.
+Tomada de Decisão da IA: Lógica de comportamento do inimigo que avalia a porcentagem de vida atual para escolher entre ações ofensivas (Ataque) ou defensivas (Cura).
 
-    Decision-Making AI: Logic-based enemy behavior that evaluates current health percentages to decide between offensive (attack) or defensive (heal) actions.
+Sistema de Efeitos de Status: Estrutura escalável para aplicação e rastreamento de efeitos de status, como Fraqueza, Crítico, Escudos e Regeneração.
 
-    Status Effect System: Scalable framework for applying and tracking status effects such as Weakness, Critical, Shields, and Healing.
+Interface Dinâmica e Feedback Visual: Atualizações da HUD em tempo real, incluindo um sistema de texto flutuante de combate e um registro detalhado de eventos.
 
-    Dynamic UI & Visual Feedback: Real-time HUD updates including a floating combat text system and a detailed event log.
+Tecnologias e Arquitetura
+Engine: Godot 4.3
+Linguagem: GDScript
 
-Tech Stack
-
-    Engine: Godot 4.3
-
-    Language: GDScript
-
-    Design Patterns: Signal-based communication for UI decoupling and static methods for optimized visual effect instantiation.
+Padrões de Projeto (Design Patterns): Comunicação baseada em Sinais (Signals) para desacoplamento de UI e métodos estáticos para instanciação otimizada de efeitos visuais.
 
 
 
 
-Visual Documentation
+Documentação Visual
 
-1. Intent and Status System
-
-The enemy AI displays icons for its next intended action and updates damage modifiers based on active status effects.
+1. Sistema de Intenção e Status
+A IA do inimigo exibe ícones indicando sua próxima ação e atualiza modificadores de dano com base nos efeitos de status ativos.
 
 <img width="1272" height="717" alt="image" src="https://github.com/user-attachments/assets/85c7ac27-d14d-4c0a-a9e8-87c00a626fba" />
 
-2. Combat Log and Event Tracking
-
-The system provides a detailed record of every dice roll and action, ensuring transparency in gameplay mechanics.
+3. Registro de Combate e Eventos
+O sistema fornece um histórico detalhado de cada rolagem de dados e ação executada, garantindo transparência nas mecânicas do jogo.
 
 <img width="770" height="238" alt="image" src="https://github.com/user-attachments/assets/b62a4819-70ce-43d3-9867-f9ea1dd18655" />
 
-3. Visual Feedback (Floating Text)
-
-Real-time damage and healing calculations are displayed directly over entities using color-coded labels.
+3. Feedback Visual (Texto Flutuante)
+Cálculos de dano e cura em tempo real são exibidos diretamente sobre as entidades por meio de rótulos com código de cores.
 
 <img width="1231" height="692" alt="image" src="https://github.com/user-attachments/assets/8cacd5ab-765c-49a7-9ed0-e3193d6013eb" />

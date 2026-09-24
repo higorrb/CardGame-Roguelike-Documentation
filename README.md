@@ -46,19 +46,3 @@ Cálculos de dano e cura em tempo real são exibidos diretamente sobre os alvos 
 <img width="1231" height="692" alt="Feedback Visual com Texto Flutuante" src="https://github.com/user-attachments/assets/8cacd5ab-765c-49a7-9ed0-e3193d6013eb" />
 
 
-Documentação Visual
-
-1. Sistema de Intenção e Status
-A IA do inimigo exibe ícones indicando sua próxima ação e atualiza modificadores de dano com base nos efeitos de status ativos.
-
-<img width="1272" height="717" alt="image" src="https://github.com/user-attachments/assets/85c7ac27-d14d-4c0a-a9e8-87c00a626fba" />
-
-3. Registro de Combate e Eventos
-O sistema fornece um histórico detalhado de cada rolagem de dados e ação executada, garantindo transparência nas mecânicas do jogo.
-
-<img width="770" height="238" alt="image" src="https://github.com/user-attachments/assets/b62a4819-70ce-43d3-9867-f9ea1dd18655" />
-
-3. Feedback Visual (Texto Flutuante)
-Cálculos de dano e cura em tempo real são exibidos diretamente sobre as entidades por meio de rótulos com código de cores.
-
-<img width="1231" height="692" alt="image" src="https://github.com/user-attachments/assets/8cacd5ab-765c-49a7-9ed0-e3193d6013eb" />
